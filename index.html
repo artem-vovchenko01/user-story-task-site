@@ -3,102 +3,152 @@
 <html>
   <head>
     <title>User story form</title>
-    <link rel="stylesheet" src="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
     <h1 id="title">User story form</h1>
     <p id="description">This is a form</p>
     <form id="survey-form">
-      <label id="name-label" for="name">Name</label>
-      <input required id="name" type="text" placeholder="Your name"/>
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input required id="name" type="text" placeholder="Your name"/>
+      </div>
 
-      <label id="email-label" for="email">Email</label>
-      <input required id="email" type="text" placeholder="Your email"/>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input required id="email" type="text" placeholder="Your email"/>
+      </div>
 
-      <label id="number-label" for="number">Age</label>
-      <input id="number" type="number" min="12" max="150" placeholder="Your age (number from 12 to 150)"/>
+      <div>
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="12" max="150" placeholder="Your age (number from 12 to 150)"/>
+      </div>
 
+      <div>
       <label id="dropdown-label" for="dropdown">Gender</label>
       <select id="dropdown">
         <option>Male</option>
         <option>Female</option>
         <option>Other</option>
       </select>
+      </div>
 
       <h2>Where are you coming from?</h2>
 
-      <input type="radio" id="region-europe" name="region"/>
-      <label for="region-europe">Europe</label>
+      <div>
+        <input type="radio" id="region-europe" name="region"/>
+        <label for="region-europe">Europe</label>
+      </div>
 
-      <input type="radio" id="region-asia" name="region"/>
-      <label for="region-asia">Asia</label>
+      <div>
+        <input type="radio" id="region-asia" name="region"/>
+        <label for="region-asia">Asia</label>
+      </div>
 
-      <input type="radio" id="region-africa" name="region"/>
-      <label for="region-africa">Africa</label>
+      <div>
+        <input type="radio" id="region-africa" name="region"/>
+        <label for="region-africa">Africa</label>
+      </div>
 
-      <input type="radio" id="region-north-america" name="region"/>
-      <label for="region-north-america">North America</label>
+      <div>
+        <input type="radio" id="region-north-america" name="region"/>
+        <label for="region-north-america">North America</label>
+      </div>
 
-      <input type="radio" id="region-south-america" name="region"/>
-      <label for="region-south-america">South America</label>
+      <div>
+        <input type="radio" id="region-south-america" name="region"/>
+        <label for="region-south-america">South America</label>
+      </div>
 
-      <input type="radio" id="region-australia" name="region"/>
-      <label for="region-australia">Australia</label>
+      <div>
+        <input type="radio" id="region-australia" name="region"/>
+        <label for="region-australia">Australia</label>
+      </div>
 
-      <input type="radio" id="region-other" name="region"/>
-      <label for="region-other">Other part of the world</label>
+      <div>
+        <input type="radio" id="region-other" name="region"/>
+        <label for="region-other">Other part of the world</label>
+      </div>
 
       <h2>What is your preferred way to participate in the bootcamp?</h2>
 
-      <input type="radio" id="type-of-study-online" name="type-of-study"/>
-      <label for="type-of-study-online">Online</label>
+      <div>
+        <input type="radio" id="type-of-study-online" name="type-of-study"/>
+        <label for="type-of-study-online">Online</label>
+      </div>
 
-      <input type="radio" id="type-of-study-offlinen" name="type-of-study"/>
-      <label for="type-of-study-offlinen">Offline</label>
+      <div>
+        <input type="radio" id="type-of-study-offlinen" name="type-of-study"/>
+        <label for="type-of-study-offlinen">Offline</label>
+      </div>
 
       <h2>What best describes you?</h2>
-      <input id="degree-high-school" type="radio" name="degrees" value="high-school"/>
-      <label for="degree-high-school">I'm studying in high school</label>
+      <div>
+        <input id="degree-high-school" type="radio" name="degrees" value="high-school"/>
+        <label for="degree-high-school">I'm studying in high school</label>
+      </div>
 
-      <input id="degree-high-school-grad" type="radio" name="degrees" value="high-school-grad"/>
-      <label for="degree-high-school-grad">I'm a high school graduate</label>
+      <div>
+        <input id="degree-high-school-grad" type="radio" name="degrees" value="high-school-grad"/>
+        <label for="degree-high-school-grad">I'm a high school graduate</label>
+      </div>
 
-      <input id="undergrad" type="radio" name="degrees" value="undergrad"/>
-      <label for="undergrad">I'm an undergraduate student</label>
+      <div>
+        <input id="undergrad" type="radio" name="degrees" value="undergrad"/>
+        <label for="undergrad">I'm an undergraduate student</label>
+      </div>
 
-      <input id="grad" type="radio" name="degrees" value="grad"/>
-      <label for="grad">I've graduated from university / college</label>
+      <div>
+        <input id="grad" type="radio" name="degrees" value="grad"/>
+        <label for="grad">I've graduated from university / college</label>
+      </div>
 
-      <input id="degree" type="radio" name="degrees" value="degree"/>
-      <label for="degree">I'm working on PhD or Masters degree</label>
+      <div>
+        <input id="degree" type="radio" name="degrees" value="degree"/>
+        <label for="degree">I'm working on PhD or Masters degree</label>
+      </div>
 
-      <input id="degree-got" type="radio" name="degrees" value="degree-got"/>
-      <label for="degree-got">I have a PhD or Masters degree</label>
+      <div>
+        <input id="degree-got" type="radio" name="degrees" value="degree-got"/>
+        <label for="degree-got">I have a PhD or Masters degree</label>
+      </div>
 
       <h2>Which subjects interest you the most?</h2>
 
-      <input id="interest-design" type="checkbox" name="interests" value="design"/>
-      <label for="interest-design">Design</label>
+      <div>
+        <input id="interest-design" type="checkbox" name="interests" value="design"/>
+        <label for="interest-design">Design</label>
+      </div>
 
-      <input id="interest-programming" type="checkbox" name="interests" value="programming"/>
-      <label for="interest-programming">Programming</label>
-    </form>
+      <div>
+        <input id="interest-programming" type="checkbox" name="interests" value="programming"/>
+        <label for="interest-programming">Programming</label>
+      </div>
 
-      <input id="interest-business" type="checkbox" name="interests" value="business"/>
-      <label for="interest-business">Business</label>
+      <div>
+        <input id="interest-business" type="checkbox" name="interests" value="business"/>
+        <label for="interest-business">Business</label>
+      </div>
 
-      <input id="interest-science" type="checkbox" name="interests" value="science"/>
-      <label for="interest-science">Science</label>
+      <div>
+        <input id="interest-science" type="checkbox" name="interests" value="science"/>
+        <label for="interest-science">Science</label>
+      </div>
 
-      <input id="interest-humanities" type="checkbox" name="interests" value="humanities"/>
-      <label for="interest-humanities">Humanities subjects</label>
+      <div>
+        <input id="interest-humanities" type="checkbox" name="interests" value="humanities"/>
+        <label for="interest-humanities">Humanities subjects</label>
+      </div>
 
       <label for="why-join">
         <h2>Why do you want to join us?</h2>
       </label>
-      <textarea rows=10 cols=100 name="why-join" id="why-join"></textarea>
-      <input id="submit-btn" type="submit" value="Submit"/>
+      <textarea rows=10 name="why-join" id="why-join"></textarea>
+
+      <div>
+        <input id="submit-btn" type="submit" value="Submit"/>
+      </div>
     </form>
   </body>
 </html>

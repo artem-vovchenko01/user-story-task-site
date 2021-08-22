@@ -1,0 +1,15 @@
+input {
+  margin: 0.4rem;
+}
+
+textarea {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+#submit-btn {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 5px 20px;
+}
